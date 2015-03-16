@@ -47,7 +47,7 @@
 use std::vec::Vec;
 use std::iter::Iterator;
 use std::io;
-use std::io::{Read, ReadExt};
+use std::io::Read;
 
 /// A tokenizer returning string slices from a reader
 ///
