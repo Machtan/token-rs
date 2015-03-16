@@ -5,15 +5,17 @@ This is a small package containing a simple string-tokenizer for the rust progra
 
 (The sentence splitter might be moved, once I find out where I want it).
 
-**Documentation**
+## Documentation
 
-[machtan.github.io/token-rs/token](machtan.github.io/token-rs/token)
+[machtan.github.io/token-rs/token](http://machtan.github.io/token-rs/token)
 
 # Building
 Add the following to your Cargo.toml file
 
+```toml
 [dependencies.token]
 git = "https://github.com/machtan/token-rs"
+```
 
 # Examples
 
