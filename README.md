@@ -25,10 +25,14 @@ extern crate token;
 let separators = vec![' ', '\n', '\t', '\r'];
 let source: &str = "    Hello world \n  How do you do\t-Finely I hope";
 
-let mut tokenizer = tokenizer::Tokenizer::new(source.as_bytes(), separators);
+let mut tokenizer = token::Tokenizer::new(source.as_bytes(), separators);
 println!("Tokenizing...");
-for token in tokenizer {
-    println!("- Got token: {}", token.unwrap());
+loop {
+    let token = match tokenizer.next().unwrap() {
+        Some(token) => token,
+        None => { break; }
+    };
+    println!("- Got token: {}", token);
 }
 println!("Done!");
 ```

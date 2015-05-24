@@ -1,7 +1,7 @@
 [package]
 
 name            = "token"
-version         = "1.0.0-rc1"
+version         = "1.0.0-rc2"
 authors         = ["Jakob Lautrup Nysom <jaln@itu.dk>"]
 readme          = "README.md"
 documentation   = "https://machtan.github.io/token-rs/token"
